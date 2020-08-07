@@ -17,7 +17,7 @@ class Song
   end
 
   def artist_name(song)
-    if song.artist.name
+    if self.artist.name
       artist.name
     end
   end

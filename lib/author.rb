@@ -10,7 +10,4 @@ class Author
     Post.all.select {|post| author.post = self}
   end
 
-
-  end
-
 end

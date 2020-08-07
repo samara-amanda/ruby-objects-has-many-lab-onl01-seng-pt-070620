@@ -8,6 +8,7 @@ class Author
 
   def posts
     Post.all.select {|post| author.post = self}
+  end
 
 
   end

@@ -20,6 +20,9 @@ class Artist
   end
 
   def song_count
+    Song.all.select do |song|
+      song.artist.count
+    end
   end
 
 

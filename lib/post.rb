@@ -14,4 +14,7 @@ class Post
   def self.all
     @@all
   end
+
+  def author
+    Author.all.select {|author| author.post == self }
 end

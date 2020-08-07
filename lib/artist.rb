@@ -20,7 +20,9 @@ class Artist
   end
 
   def self.song_count
-    @songs
+    self.select do |artist|
+      artist.@songs.count
+    end
   end
 
 end
